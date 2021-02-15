@@ -1,0 +1,5 @@
+BG_COLOR = "grey10"
+COMPONENT_BG_COLOR = "grey15"
+TEXT_COLOR = "cyan2"
+FRAME_COLOR = "cyan2"
+SALAD_COLOR = "SpringGreen1"
