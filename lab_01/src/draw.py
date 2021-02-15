@@ -6,6 +6,7 @@ TRIANGLE_FRAME_COLOR = "cyan2"
 CIRCLE_FRAME_COLOR = "SpringGreen1"
 
 PX_TO_TXT = 31 / 316
+EPS = 1e-6
 
 def create_figures(root, transformed_coords, circle_center, radius):
     root.canv.create_polygon(transformed_coords[0][0], transformed_coords[0][1], transformed_coords[1][0], \
@@ -39,8 +40,9 @@ def print_coords(root, transformed_coords, coords, circle_center, circle_center_
 
 def points_on_same_line(points_x, points_y):
     for i in range(len(points_x) - 2):
-        if ((points_y[i + 2] - points_y[i])*(points_x[i + 1] - \
-            points_x[i]) != (points_x[i + 2] - points_x[i])*(points_y[i + 1] - points_y[i])):
+        if (abs((points_y[i + 2] - points_y[i])*(points_x[i + 1] - \
+            points_x[i]) - (points_x[i + 2] - points_x[i])*(points_y[i + 1] \
+            - points_y[i])) > EPS):
             return False
     return True
 

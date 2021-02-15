@@ -19,7 +19,7 @@ class RootWindow(Tk):
         img = PhotoImage(file="icon.png")
 
         self.minsize(1, 1)
-        self.resizable(0, 0)
+        #self.resizable(0, 0)
         self.iconphoto(True, img)
         self["bg"] = BG_COLOR
         self.title("Find minimal area")
