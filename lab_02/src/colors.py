@@ -1,0 +1,16 @@
+BG_COLOR = "grey10"
+COMPONENT_BG_COLOR = "grey15"
+TEXT_COLOR = "tan1"
+FRAME_COLOR = "tan1"
+SALAD_COLOR = "chocolate1"
+FONT = 'helvetica 16'
+HEADING_FONT = 'helvetica 18'
+ENTRY_TEXT_COLOR = "pink1"
+
+CANV_X = 1000
+CANV_Y = 730
+
+FUNC_X = 32
+LINE_X = 34
+
+ENTRY_FONT=30
